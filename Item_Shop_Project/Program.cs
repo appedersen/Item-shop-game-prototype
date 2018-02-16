@@ -3,20 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SFML.Graphics;
+using SFML;
 
-namespace Item_Shop_Project
+namespace SFML
 {
     static class Program
     {
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        ///
+        /// 
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Window_Driver Game_Loop = new Window_Driver();
+            Game_Loop.Render();
+            return;
         }
     }
+
 }
