@@ -18,21 +18,18 @@ namespace SFML
             window.SetVisible(true);
             window.Closed += new EventHandler(OnClosed);
 
-            CircleShape cs = new CircleShape(100.0f);
 
-            Color funcolor = new Color();
-            funcolor.A = 255;
-            Random Rand = new Random();
+            Spritehandler Sprite_Library = new Spritehandler();
 
             while (window.IsOpen)
             {
-                funcolor.R = (byte)(Rand.Next()%255);
-                funcolor.G = (byte)(Rand.Next() % 255);
-                funcolor.B = (byte)(Rand.Next() % 255);
-                cs.FillColor = funcolor;
                 window.Clear();
+
+                Sprite_Library.Draw_Sprite("Testsprite.png", 1, 1, window);
+
+
                 window.DispatchEvents();
-                window.Draw(cs);
+
                 window.Display();
             }
 
