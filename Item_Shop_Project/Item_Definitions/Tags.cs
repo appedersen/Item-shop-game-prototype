@@ -45,6 +45,8 @@ namespace SFML
         {
             //This function should eventually be replaced with a function that reads in from a script.
 
+            Define_Tag("NULL", Inheritence_Level.None);
+
             Define_Tag("Metal", Inheritence_Level.None);
             Define_Tag("Wood", Inheritence_Level.None);
             Define_Tag("Leather", Inheritence_Level.None);
