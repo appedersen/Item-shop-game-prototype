@@ -85,6 +85,8 @@
   <ItemGroup>
     <Compile Include="Graphics\Spritehandler.cs" />
     <Compile Include="Graphics\Window_Driver.cs" />
+    <Compile Include="Item_Definitions\Materials.cs" />
+    <Compile Include="Item_Definitions\Tags.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

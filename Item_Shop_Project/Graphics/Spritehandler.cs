@@ -37,6 +37,8 @@ namespace SFML
             Sprite Sprite_creation = new Sprite();
             Sprite_creation.Texture = Get_Sprite(Filename);
 
+            Sprite_creation.Position = new System.Vector2f(x,y);
+
             window.Draw(Sprite_creation);
 
 
